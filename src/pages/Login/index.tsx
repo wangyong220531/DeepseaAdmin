@@ -4,15 +4,11 @@ import { useState } from "react"
 import styles from "./index.module.less"
 import useAccount from "../../store"
 
-interface UserInput {
-    username: string
-    password: string
-}
-
 const Login: React.FC = () => {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const account = useAccount()
+    const [token, setToken] = useState("")
 
     const submit = () => {
         account[0].login({
@@ -22,6 +18,7 @@ const Login: React.FC = () => {
             username: "wangyong",
             uuid: "12345678"
         })
+        setToken(sessionStorage.getItem("token"))
     }
 
     return (
