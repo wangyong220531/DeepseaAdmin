@@ -1,11 +1,14 @@
 import createStore from "easy-zustand"
 import { login } from "../api"
+import axios from "axios"
 
 const useAccount = createStore({
+    login: (userInput: LoginData) => {
+        axios.post("/login", { userInput }).then(res => {
+            const result = res.data.resData.loginResult.data.token
+        })
+    },
     getuser() {
-        // if (sessionStorage.getItem("user")) {
-        //     return JSON.parse(sessionStorage.getItem("user"))
-        // }
         return
     },
     setuser(data: any) {
@@ -19,9 +22,6 @@ const useAccount = createStore({
     },
     setToken(value: string) {
         sessionStorage.setItem("user", value)
-    },
-    login: (userInput: LoginData) => {
-        login(userInput).then(res => {})
     }
 })
 
