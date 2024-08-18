@@ -23,78 +23,78 @@ const MenuList: Menu[] = [
     },
     {
         key: "conductor",
-        label: "指挥",
+        label: "测试1",
         element: <Command />,
         children: [
             {
                 key: "policeHandle",
-                label: "警情处理记录",
+                label: "测试1-1",
                 element: <PoliceHandle />
             },
             {
                 key: "management",
-                label: "勤务管理",
+                label: "测试1-2",
                 element: <Management />
             },
             {
                 key: "analysis",
-                label: "勤务分析",
+                label: "测试1-3",
                 element: <Analysis />
             },
             {
                 key: "service",
-                label: "请求服务",
+                label: "测试1-4",
                 element: <Service />
             }
         ]
     },
     {
         key: "plus",
-        label: "智慧+",
+        label: "测试2",
         element: <Plus />
     },
     {
         key: "unit",
-        label: "智慧单元",
+        label: "测试3",
         element: <Unit />,
         children: [
             {
                 key: "comprehensive",
-                label: "综合",
+                label: "测试3-1",
                 element: <Comprehensive />
             },
             {
                 key: "neighborhoods",
-                label: "小区",
+                label: "测试3-2",
                 element: <Neighborhoods />
             },
             {
                 key: "campus",
-                label: "校园",
+                label: "测试3-3",
                 element: <Campus />
             }
         ]
     },
     {
         key: "stormThinking",
-        label: "风暴思维",
+        label: "测试4",
         element: <StormThinking />,
         children: [
             {
                 key: "model",
-                label: "模型",
+                label: "测试4-1",
                 element: <Model />
             },
             {
                 key: "battle",
-                label: "技战法",
+                label: "测试4-2",
                 element: <Battle />
             }
         ]
     },
     {
         key: "configuration",
-        label: "系统配置",
+        label: "测试5",
         element: <Configuration />
     }
 ]
