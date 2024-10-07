@@ -18,7 +18,7 @@ const Login: React.FC = () => {
             username: "wangyong",
             uuid: "12345678"
         })
-        setToken(sessionStorage.getItem("token"))
+        // setToken(sessionStorage.getItem("token"))
     }
 
     return (

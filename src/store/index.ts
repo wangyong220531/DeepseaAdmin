@@ -1,5 +1,4 @@
 import createStore from "easy-zustand"
-import { login } from "../api"
 import axios from "axios"
 
 const useAccount = createStore({

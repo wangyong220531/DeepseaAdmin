@@ -5,13 +5,16 @@ import Login from "./pages/Login"
 import NotFound from "./pages/NotFound"
 import Redirect from "./components/Redirect"
 import "./App.css"
+import About from "./pages/BabyNaming"
+import OwnerAvatorCustomize from "./pages/OwnerAvatorCustomize"
+import Home from "./components/Home"
 
 function App() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/login" element={<Login />}></Route>
-                <Route
+                {/* <Route
                     path="/"
                     element={
                         <Redirect from="/" to={`${MenuList[0].key}`}>
@@ -38,7 +41,10 @@ function App() {
                             ))}
                         </Route>
                     ))}
-                </Route>
+                </Route> */}
+                <Route path="/" element={<Home />}/>
+                <Route path="/babyNaming" element={<About />}></Route>
+                <Route path="/ownerAvatorCustomize" element={<OwnerAvatorCustomize />}></Route>
                 <Route path="/*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>

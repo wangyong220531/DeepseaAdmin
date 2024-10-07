@@ -17,13 +17,13 @@ const Dashboard: React.FC = () => {
 
     return (
         <Layout className={styles["layout"]}>
-            <Sider style={{ background: colorBgContainer }}>
+            {/* <Sider style={{ background: colorBgContainer }}>
                 <div className="logo"></div>
                 <Menu mode="inline" items={MenuList.filter(item => item.key !== "login")} onClick={e => test(e)} />
-            </Sider>
+            </Sider> */}
             <Layout>
                 <Header style={{ background: colorBgContainer }}></Header>
-                <Content style={{ background: colorBgContainer }}>
+                <Content style={{ background: colorBgContainer}}>
                     <Outlet/>
                 </Content>
             </Layout>

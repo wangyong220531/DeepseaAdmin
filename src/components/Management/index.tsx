@@ -1,7 +1,7 @@
 const Management: React.FC = () => {
     return (
         <>
-            <div>管理</div>
+            <div>测试1-2</div>
         </>
     )
 }
